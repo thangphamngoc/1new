@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="font/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/reposive.css">
+    <link rel="stylesheet" type="text/css" href="css/reponsive.css">
+    <script type="text/javascript" src="js/javascript.js">
+    </script>
 </head>
 <body>
 	<div class="wrapper">
@@ -16,7 +18,7 @@
 				<div class="logo">
 					<img src="img/logo.png">
 				</div>
-				<div class="menu-right">
+				<div class="menu-right" id="myTopnav">
 					<ul>
 						<li>TOP DESTINATIONS</li>
 						<li>ADD YOUR BOAT</li>
@@ -24,6 +26,9 @@
 					<div class="account">
 						SING UP
 					</div>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					    <i class="fa fa-bars"></i>
+					  </a>
 				</div>
 			</div>
 		</header>
@@ -75,7 +80,7 @@
 									<img src="img/box1.jpg">
 								</div>
 								<div class="icon-number">
-									<img src="img/icon.png">
+									<i class="fa fa-ship" aria-hidden="true"></i>
     		 				        <span>765</span>
 								</div>
 								<div class="item-text">
@@ -88,7 +93,7 @@
 									<img src="img/box2.jpg">
 								</div>
 								<div class="icon-number">
-									<img src="img/icon.png">
+									<i class="fa fa-ship" aria-hidden="true"></i>
     		 				        <span>765</span>
 								</div>
 								<div class="item-text">
@@ -103,7 +108,7 @@
 									<img src="img/box3.jpg">
 								</div>
 								<div class="icon-number">
-									<img src="img/icon.png">
+									<i class="fa fa-ship" aria-hidden="true"></i>
     		 				        <span>765</span>
 								</div>
 								<div class="item-text">
@@ -116,7 +121,7 @@
 									<img src="img/box4.jpg">
 								</div>
 								<div class="icon-number">
-									<img src="img/icon.png">
+									<i class="fa fa-ship" aria-hidden="true"></i>
     		 				        <span>765</span>
 								</div>
 								<div class="item-text">
@@ -129,7 +134,7 @@
 									<img src="img/box5.jpg">
 								</div>
 								<div class="icon-number">
-									<img src="img/icon.png">
+									<i class="fa fa-ship" aria-hidden="true"></i>
     		 				        <span>765</span>
 								</div>
 								<div class="item-text">
@@ -167,24 +172,26 @@
 								<div class="avatar">
 									<img src="img/box2-1.jpg">
 								</div>
-								<div class="icon-number">
-    		 				        <span>$580 / day</span>
+								<div class="icon-number icon-buy">
+    		 				        <span><i class="fa fa-usd" aria-hidden="true"></i>580 / day</span>
 								</div>
 								<div class="item-text">
 									<h4>Figueira da Foz</h4>
-    		 				        <span>Portugal</span>
+    		 				        <span><i class="fa fa-map-marker"></i>Lisbon</span>
+	    		 				<span><i class="fa fa-users" aria-hidden="true"></i>8 Berths</span>
 							    </div>
 							</div>
 							<div class="item">
 							    <div class="avatar">
 									<img src="img/box2-2.jpg">
 								</div>
-								<div class="icon-number">
-    		 				        <span>$580 / day</span>
+								<div class="icon-number icon-buy">
+    		 				        <span><i class="fa fa-usd" aria-hidden="true"></i>580 / day</span>
 								</div>
 								<div class="item-text">
 									<h4>Figueira da Foz</h4>
-    		 				        <span>Portugal</span>
+    		 				        <span><i class="fa fa-map-marker"></i>Lisbon</span>
+	    		 				    <span><i class="fa fa-users" aria-hidden="true"></i>8 Berths</span>
 								</div>
 						    </div>
 						</div>
@@ -193,24 +200,26 @@
 								<div class="avatar">
 									<img src="img/box2-3.jpg">
 								</div>
-								<div class="icon-number">
-    		 				        <span>$580 / day</span>
+								<div class="icon-number icon-buy">
+    		 				        <span><i class="fa fa-usd" aria-hidden="true"></i>580 / day</span>
 								</div>
 								<div class="item-text">
 									<h4>Figueira da Foz</h4>
-    		 				        <span>Portugal</span>
+    		 				        <span><i class="fa fa-map-marker"></i>Lisbon</span>
+	    		 				<span><i class="fa fa-users" aria-hidden="true"></i>8 Berths</span>
 							    </div>
 							</div>
 							<div class="item">
 							    <div class="avatar">
 									<img src="img/box2-4.jpg">
 								</div>
-								<div class="icon-number">
-    		 				        <span>$580 / day</span>
+								<div class="icon-number icon-buy">
+    		 				        <span><i class="fa fa-usd" aria-hidden="true"></i>580 / day</span>
 								</div>
 								<div class="item-text">
 									<h4>Figueira da Foz</h4>
-    		 				        <span>Portugal</span>
+    		 				        <span><i class="fa fa-map-marker"></i>Lisbon</span>
+	    		 				<span><i class="fa fa-users" aria-hidden="true"></i>8 Berths</span>
 								</div>
 						    </div>
 					    </div>
@@ -224,7 +233,7 @@
 		<footer>
 			<div class="img-top-footer"></div>
 			<div class="container">
-				<div class="footer">
+				<div class="footer" id="myfooter">
 					<div class="item">
 	                    <div class="title">
 	                        <h3>top locations</h3>

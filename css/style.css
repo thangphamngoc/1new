@@ -13,9 +13,17 @@ body {
 * {
     box-sizing: border-box;
 }
+a{
+    cursor: pointer;
+}
 
 .clear-both {
     clear: both;
+}
+.wrapper{
+    position: inherit;
+    width: 100%;
+    display: block;
 }
 .container {
     margin: 0 auto;
@@ -45,6 +53,7 @@ header .container {
     display: flex;
     width: 1170px;
     justify-content: space-between;
+    align-items: center;
 }
 header .container .menu-right {
     display: flex;
@@ -64,6 +73,9 @@ header .container .menu-right ul li{
 	display: inline-block;
     list-style: none;
     margin-right: 40px;
+}
+ .container .menu-right a.icon {
+    display: none;
 }
 /*Banner-top*/
 .banner-top {
@@ -200,6 +212,10 @@ content-hot
 .content-hot .content-row .item:not(:first-child) {
     margin-left: 25px;
 }
+.content-hot .content .content-row .item .icon-number i{
+    top: 10px;
+    left: 10px;
+}
 .content-hot .content .content-row .item-x2 {
     width: 68.9%;
 }
@@ -215,15 +231,13 @@ content-hot
     border-radius: 5px;
     color: #fff;
     font-size: 13px;
-    height: 35px;
-    width: 90px;
+    padding: 10px 20px;
 }
 .content-row .item .icon-number img{
 	height: 35px;
     width: 70px;
 }
 .content-row .item .icon-number span{
-	position: absolute;
     top: 10px;
     right: 12px;
     font-weight: bold;
@@ -327,6 +341,16 @@ content-hot
     height: 305px;
     border-radius: 3px;
 }
+.blog-buy .content .content-row .item .icon-buy{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #e7434e;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+}
+
 .blog-buy .content .content-row .item:not(:first-child) {
     margin-left: 25px;
 }
@@ -344,6 +368,9 @@ content-hot
     border-radius: 3px;
     color: #fff;
     font-size: 13px;
+}
+.blog-buy .content .content-row .item .item-text span,i{
+        margin-right: 5px;
 }
 .blog-buy .content .content-row .item .description {
     position: absolute;
