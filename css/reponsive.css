@@ -225,6 +225,10 @@ header .container .menu-right ul li{
   .footer .item .content .form .form-group button{
   	width: 100px;
   }
+  .footer .item .content .social ul{
+  	margin-top: 15px;
+    margin-bottom: 30px;
+  }
 
 }
 /*Iphone(480 x 640)*/
@@ -455,6 +459,10 @@ header .container .menu-right ul li{
   .footer .item .content .form .form-group button{
   	width: 100px;
   }
+  .footer .item .content .social ul{
+  	margin-top: 15px;
+    margin-bottom: 30px;
+  }
 }
 
 /*Tablet nhỏ(480 x 640)*/
@@ -597,15 +605,16 @@ header .container .menu-right ul li{
   	display: block;
   }
   .content-hot .content-row .item{
-  	height: 210px;
   	margin-bottom: 25px;
-  	width: 365px;
     display: flex;
-    margin: 25px auto !important;
+    width: 100%;
   }
   .content-hot .content-row .item .avatar{
-  	    margin: 0 auto;
-  	    height: 100%;
+  	    width: 100%;
+    height: 265px
+  }
+  .content-hot .content-row .item:not(:first-child){
+  	margin: 0px;
   }
   .content-row .item .item-text h4{
   	font-size: 20px;
@@ -659,6 +668,10 @@ header .container .menu-right ul li{
   .footer .item .content .form .form-group button{
   	width: 100px;
   }
+  .footer .item .content .social ul{
+  	margin-top: 15px;
+    margin-bottom: 30px;
+  }
 
 }
 /*Ipad dọc(768 x 1024)*/
@@ -704,6 +717,9 @@ header .container .menu-right ul li{
   }
   .blog-buy .content .content-row .item{
   	height: auto;
+  }
+  .sidenav{
+  	display: none;
   }
 }
 
