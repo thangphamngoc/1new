@@ -25,7 +25,7 @@ function ftFunction(){
 // }
 
 function openNav() {
-  document.getElementById("js-my-side").style= "right:0px;display:block";
+  document.getElementById("js-my-side").style= "right:0px";
   document.getElementById("js-my-bot").style= "display:block";
  }
  function closeNav() {
