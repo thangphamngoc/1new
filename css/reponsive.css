@@ -10,31 +10,54 @@
     display: block;
     margin: 0px 15px;
         color: #eee;
+        font-size: 30px;
   }
   header .container .menu-right .account{
   	display: none;
   }
-  .menu-right.responsive {
-  	position: relative;
-  }
+  header .container .menu-right ul li:first-child{
+	display: block;
+}
+header .container .menu-right ul{
+	display: block;
+}
+.sidenav {
+  height: 100%;
+  width:0px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  right: 0;
+  background-color: #eee;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
 
-  .menu-right.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .container .menu-right a.icon{
-  	    font-size: 35px;
-  }
-  .menu-right.responsive ul {
-    display: block;
-    text-align: left;
-    position: absolute;
-    top: 45px;
-  }
-  header .container .menu-right.responsive ul li{
-  	margin-right: 0;
-  }
+.sidenav li {
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  display: block;
+  transition: 5s;
+  list-style:none;
+}
+.sidenav li:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 70%;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+header .container .menu-right ul li{
+	margin-right: 0px;
+}
   .banner-top{
   	height: 390px;
   }
@@ -69,8 +92,8 @@
   }
   .banner-top .statistic{
   	max-width: 80%;
-  	margin-bottom: -55px;
-  	padding: 0;
+  	margin-bottom: -65px;
+    padding: 10px;
   }
   .banner-top .statistic .item h3{
   	    font-size: 15px;
@@ -162,23 +185,24 @@
     padding: 10px 5px;
   }
   footer{
-  	padding: 0;
-  	    height: 140px;
+  	    padding: 15px 0;
+  }
+  .footer{
+  	display: block;
   }
   .footer .item{
-  	margin-top: 20px;
-  }
-  .footer .item .title h3{
-  	font-weight: bold;
-    font-size: 11px;
-  }
-  .footer .item .title h3:hover{
-  	color: red;
-
-  }
-  .footer .item .content{
-  	display: none;
   	width: 100%;
+  	    padding: 8px 0px;
+  }
+  .footer .item .content .form .form-group{
+  	display: flex;
+  }
+  .footer .item .content .form .form-group input{
+  	width: auto;
+  	border-radius: 0;
+  }
+  .footer .item .content .form .form-group button{
+  	width: 100px;
   }
 
 }
@@ -194,32 +218,56 @@
     display: block;
     margin: 0px 15px;
         color: #eee;
+            font-size: 30px;
   }
   header .container .menu-right .account{
   	margin-top: 0;
   	display: none;
   }
-  .menu-right.responsive {
-  	position: relative;
-  }
+  header .container .menu-right ul li:first-child{
+	display: block;
+}
+header .container .menu-right ul{
+	display: block;
+}
+.sidenav {
+  height: 100%;
+  width:0px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  right: 0;
+  background-color: #eee;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
 
-  .menu-right.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .container .menu-right a.icon{
-  	    font-size: 35px;
-  }
-  .menu-right.responsive ul {
-    display: block;
-    text-align: left;
-    position: absolute;
-    top: 45px;
-  }
-  header .container .menu-right.responsive ul li{
-  	margin-right: 0;
-  }
+.sidenav li {
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  display: block;
+  transition: 5s;
+  list-style:none;
+}
+.sidenav li:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 80%;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+header .container .menu-right ul li{
+	margin-right: 0px;
+}
+
   .banner-top{
   	height: 390px;
   }
@@ -254,8 +302,8 @@
   }
   .banner-top .statistic{
   	max-width: 80%;
-  	margin-bottom: -55px;
-  	padding: 0;
+  	margin-bottom: -80px;
+  	padding: 15px;
   }
   .banner-top .statistic .item h3{
   	    font-size: 15px;
@@ -347,26 +395,26 @@
     padding: 10px 5px;
   }
   footer{
-  	padding: 0;
-  	    height: 140px;
+  	    padding: 15px 0;
+  }
+  .footer{
+  	display: block;
   }
   .footer .item{
-  	margin-top: 20px;
-  }
-  .footer .item .title h3{
-  	font-weight: bold;
-    font-size: 11px;
-  }
-  .footer .item .title h3:hover{
-  	color: red;
-
-  }
-  .footer .item .content{
-  	display: none;
   	width: 100%;
+  	    padding: 8px 0px;
+  }
+  .footer .item .content .form .form-group{
+  	display: flex;
+  }
+  .footer .item .content .form .form-group input{
+  	width: auto;
+  	border-radius: 0;
+  }
+  .footer .item .content .form .form-group button{
+  	width: 100px;
   }
 }
-
 
 /*Tablet nhỏ(480 x 640)*/
 @media only screen and (min-width: 480px) and (max-width : 767px){
@@ -380,35 +428,54 @@
     display: block;
     margin: 0px 15px;
         color: #eee;
+        font-size: 35px;
   }
   header .container .menu-right .account{
   	margin-top: 0;
   }
-  .menu-right.responsive .account{
-  	margin-right: 65px;
-  	margin-top: 0;
-  }
-  .menu-right.responsive {
-  	position: relative;
-  }
+header .container .menu-right ul li:first-child{
+	display: block;
+}
+header .container .menu-right ul{
+	display: block;
+}
+.sidenav {
+  height: 100%;
+  width:0px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  right: 0;
+  background-color: #eee;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
 
-  .menu-right.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .container .menu-right a.icon{
-  	    font-size: 35px;
-  }
-  .menu-right.responsive ul {
-    display: block;
-    text-align: left;
-    position: absolute;
-    top: 45px;
-  }
-  header .container .menu-right.responsive ul li{
-  	margin-right: 0;
-  }
+.sidenav li {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 5s;
+  list-style:none;
+}
+.sidenav li:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 80%;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+header .container .menu-right ul li{
+	margin-right: 0px;
+}
   .banner-top .form-search{
   	width: 90%;
   }
@@ -507,27 +574,26 @@
     padding: 10px 5px;
   }
   footer{
-  	padding: 0;
-  	    height: 140px;
+  	    padding: 15px 0;
   }
-  .footer .item{
-  	margin-top: 20px;
-  }
-  .footer .item .title h3{
-  	font-weight: bold;
-    font-size: 11px;
-  }
-  .footer .item .title h3:hover{
-  	color: red;
-
-  }
-  .footer .item .content{
-  	display: none;
-  	width: 100%;
-  }
-  .footer.reponsive .item .content{
+  .footer{
   	display: block;
   }
+  .footer .item{
+  	width: 100%;
+  	    padding: 8px 0px;
+  }
+  .footer .item .content .form .form-group{
+  	display: flex;
+  }
+  .footer .item .content .form .form-group input{
+  	width: auto;
+  	border-radius: 0;
+  }
+  .footer .item .content .form .form-group button{
+  	width: 100px;
+  }
+
 }
 /*Ipad dọc(768 x 1024)*/
 @media only screen and (min-width : 768px) and (max-width : 1250px){

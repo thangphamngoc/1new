@@ -59,7 +59,7 @@ header .container .menu-right {
     display: flex;
     position: relative;
 }
-header .container .menu-right .account{
+header .container .account{
 	border: 1px solid #fff;
 	align-self: baseline;
 	border-radius: 8px;
@@ -68,6 +68,9 @@ header .container .menu-right .account{
 }
 header .container .menu-right ul {
     margin: 0;
+}
+header .container .menu-right ul li:first-child{
+    display: none;
 }
 header .container .menu-right ul li{
 	display: inline-block;
