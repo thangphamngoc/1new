@@ -16,10 +16,19 @@ function ftFunction(){
   }
 }
 
-function openNav() {
-  document.getElementById("my-side-nav").style.width = "40%";
-}
+// function openNav() {
+//   document.getElementById("js-my-side").style= "right: 0px";
+// }
 
-function closeNav() {
-  document.getElementById("my-side-nav").style.width = "0";
-}
+// function closeNav() {
+//   document.getElementById("js-my-side").style= "right: -200px";
+// }
+
+function openNav() {
+  document.getElementById("js-my-side").style= "right:0px;display:block";
+  document.getElementById("js-my-bot").style= "display:block";
+ }
+ function closeNav() {
+  document.getElementById("js-my-bot").style= "display:none";
+  document.getElementById("js-my-side").style= "right: -250px";
+ }

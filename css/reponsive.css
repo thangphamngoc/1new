@@ -15,29 +15,49 @@
   header .container .menu-right .account{
   	display: none;
   }
-  header .container .menu-right ul li:first-child{
+  .sidebar-overlay-mb{
+ background: rgba(148,147,165,0.6);
+    bottom: -5000px;
+    display: none;
+    left: -5000px;
+    position: fixed;
+    right: -5000px;
+    top: -5000px;
+    z-index: 99;
+}
+.sidebar-wrapper-mb{
+    bottom: 0;
+    display: block;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+header .container .menu-right ul li:first-child{
 	display: block;
 }
 header .container .menu-right ul{
-	display: block;
+	display: none;
 }
 .sidenav {
   height: 100%;
-  width:0px;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0px;
-  right: 0;
   background-color: #eee;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 30px;
+  margin-top: 0px;
+  transition: all .2s ease-out;
 }
 
 .sidenav li {
-  padding: 8px 8px;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 15px;
   color: #818181;
   display: block;
   transition: 5s;
@@ -50,7 +70,7 @@ header .container .menu-right ul{
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 70%;
+  right: 80%;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -58,6 +78,7 @@ header .container .menu-right ul{
 header .container .menu-right ul li{
 	margin-right: 0px;
 }
+
   .banner-top{
   	height: 390px;
   }
@@ -224,29 +245,49 @@ header .container .menu-right ul li{
   	margin-top: 0;
   	display: none;
   }
-  header .container .menu-right ul li:first-child{
+  .sidebar-overlay-mb{
+ background: rgba(148,147,165,0.6);
+    bottom: -5000px;
+    display: none;
+    left: -5000px;
+    position: fixed;
+    right: -5000px;
+    top: -5000px;
+    z-index: 99;
+}
+.sidebar-wrapper-mb{
+    bottom: 0;
+    display: block;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+header .container .menu-right ul li:first-child{
 	display: block;
 }
 header .container .menu-right ul{
-	display: block;
+	display: none;
 }
 .sidenav {
   height: 100%;
-  width:0px;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0px;
-  right: 0;
   background-color: #eee;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 30px;
+  margin-top: 0px;
+  transition: all .2s ease-out;
 }
 
 .sidenav li {
-  padding: 8px 8px;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 15px;
   color: #818181;
   display: block;
   transition: 5s;
@@ -430,26 +471,72 @@ header .container .menu-right ul li{
         color: #eee;
         font-size: 35px;
   }
+
   header .container .menu-right .account{
   	margin-top: 0;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .sidebar-overlay-mb{
+ background: rgba(148,147,165,0.6);
+    bottom: -5000px;
+    display: none;
+    left: -5000px;
+    position: fixed;
+    right: -5000px;
+    top: -5000px;
+    z-index: 99;
+}
+.sidebar-wrapper-mb{
+    bottom: 0;
+    display: block;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
 header .container .menu-right ul li:first-child{
 	display: block;
 }
 header .container .menu-right ul{
-	display: block;
+	display: none;
 }
 .sidenav {
   height: 100%;
-  width:0px;
+  width: 250px;
   position: fixed;
   z-index: 1;
   top: 0px;
-  right: 0;
   background-color: #eee;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 30px;
+  margin-top: 0px;
+  transition: all .2s ease-out;
 }
 
 .sidenav li {
@@ -476,6 +563,23 @@ header .container .menu-right ul{
 header .container .menu-right ul li{
 	margin-right: 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .banner-top .form-search{
   	width: 90%;
   }
