@@ -1,5 +1,5 @@
 function myFunction() {
-  var x = document.getElementById("myTopnav");
+  var x = document.getElementById("my-top-nav");
   if (x.className === "menu-right") {
     x.className += " responsive";
   } else {
@@ -17,9 +17,9 @@ function ftFunction(){
 }
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "40%";
+  document.getElementById("my-side-nav").style.width = "40%";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("my-side-nav").style.width = "0";
 }
