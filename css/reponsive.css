@@ -156,15 +156,14 @@ header .container .menu-right ul li{
   .content-hot .content-row .item{
   	height: 210px;
   	    margin-bottom: 25px;
+        width: 100%;
+    margin-left: 0px !important;
+    display: flex;
   }
   .content-hot .content-row .item .avatar{
   	    margin: 0 auto;
   	    height: 100%;
-  }
-  .content-hot .content-row .item{
-    width: 100%;
-    margin-left: 0px !important;
-    display: flex;
+        width: 100%;
   }
   .content-row .item .item-text h4{
   	font-size: 20px;
@@ -189,7 +188,7 @@ header .container .menu-right ul li{
   .blog-buy .content .content-row .item{
   	height: auto;
   	width: 100%;
-  	margin-bottom: 25px;
+  	margin-bottom: 15px;
   	margin-left: 0 !important;
   }
   .blog-buy .content-row .item .item-text h4{
@@ -216,7 +215,7 @@ header .container .menu-right ul li{
   	    padding: 8px 0px;
   }
   .footer .item .content .form .form-group{
-  	display: flex;
+  	display: block;
   }
   .footer .item .content .form .form-group input{
   	width: auto;
@@ -228,6 +227,9 @@ header .container .menu-right ul li{
   .footer .item .content .social ul{
   	margin-top: 15px;
     margin-bottom: 30px;
+  }
+  .view-more a{
+    padding: 15px 30px;
   }
 
 }
@@ -389,16 +391,15 @@ header .container .menu-right ul li{
   }
   .content-hot .content-row .item{
   	height: 210px;
-  	    margin-bottom: 25px;
+  	margin-bottom: 25px;
+    width: 100%;
+    margin-left: 0px !important;
+    display: flex;
   }
   .content-hot .content-row .item .avatar{
   	    margin: 0 auto;
   	    height: 100%;
-  }
-  .content-hot .content-row .item{
-    width: 100%;
-    margin-left: 0px !important;
-    display: flex;
+        width: 100%;
   }
   .content-row .item .item-text h4{
   	font-size: 20px;
@@ -411,10 +412,10 @@ header .container .menu-right ul li{
   	bottom: 15px;
   }
   .content-row .item .icon-number{
-  	left: 35px;
+  	left: 10px;
   }
   .content-row .item .item-text{
-    left: 35px;
+    left: 10px;
   }
   .blog-buy .content .content-row{
   	display: block;
@@ -423,7 +424,7 @@ header .container .menu-right ul li{
   .blog-buy .content .content-row .item{
   	height: auto;
   	width: 100%;
-  	margin-bottom: 25px;
+  	margin-bottom: 15px;
   	margin-left: 0 !important;
   }
   .blog-buy .content-row .item .item-text h4{
@@ -608,6 +609,7 @@ header .container .menu-right ul li{
   	margin-bottom: 25px;
     display: flex;
     width: 100%;
+    height: auto;
   }
   .content-hot .content-row .item .avatar{
   	    width: 100%;
@@ -615,6 +617,7 @@ header .container .menu-right ul li{
   }
   .content-hot .content-row .item:not(:first-child){
   	margin: 0px;
+    margin-bottom: 25px;
   }
   .content-row .item .item-text h4{
   	font-size: 20px;
@@ -630,6 +633,7 @@ header .container .menu-right ul li{
   }
   .content-row .item .item-text{
     left: 20px;
+    bottom: 15px;
   }
 
   .blog-buy .content .content-row .item{

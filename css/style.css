@@ -479,3 +479,9 @@ footer{
 .footer .item .content .social ul li a i{
     line-height: 2;
 }
+.sidebar-wrapper-mb {
+    display: none;
+}
+.sidebar-overlay-mb{
+    display: none;
+}
