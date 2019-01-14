@@ -95,7 +95,7 @@ header .container .menu-right ul li{
     top: 44.1%;
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
-    width: 1000px
+    width: 1000px;
 }
 .banner-top .form-search .title{
 	color: #fff;
