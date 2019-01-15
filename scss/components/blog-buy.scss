@@ -1,0 +1,196 @@
+@import "./../abstracts/mixins";
+.blog-buy {
+  margin-bottom: 100px;
+  &__title {
+    text-align: center;
+    margin-bottom: 70px;
+    h3 {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 30px;
+      margin: 10px;
+    }
+    p {
+      color: #230d0d9c;
+    }
+  }
+  &__content {
+    margin-bottom: 120px;
+    &--row {
+      display: flex;
+      margin-bottom: 25px;
+      .item {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+        height: 305px;
+        border-radius: 3px;
+
+        &:not(:first-child) {
+          margin-left: 25px;
+        }
+        .icon-buy {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background: #e7434e;
+          border-radius: 5px;
+          color: #fff;
+          font-size: 13px;
+          padding: 10px 20px;
+        }
+        .item-text {
+          span {
+            margin-right: 5px;
+            i {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__view-more {
+    text-align: center;
+    a {
+      @include mixin-view;
+    }
+  }
+}
+
+//reponsive //
+
+@media only screen and (min-width: 320px) and(max-width: 375px) {
+  .blog-buy {
+    &__content {
+      &--row {
+        display: block;
+        margin-bottom: 0;
+        .item {
+          height: auto;
+          width: 100%;
+          margin-bottom: 15px;
+          margin-left: 0 !important;
+
+          .icon-buy {
+            top: 10px;
+            left: 10px;
+            font-size: 10px;
+            padding: 10px 5px;
+          }
+          .item-text {
+            bottom: 10px;
+            left: 10px;
+            h4 {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+    &__view-more {
+      a {
+        padding: 15px 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  .blog-buy {
+    display: block;
+    margin-bottom: 0;
+
+    &__content {
+      &--row {
+        .item {
+          height: auto;
+          width: 100%;
+          margin-bottom: 15px;
+          margin-left: 0 !important;
+
+          .icon-buy {
+            top: 10px;
+            left: 10px;
+            font-size: 10px;
+            padding: 10px 5px;
+          }
+          .item-text {
+            bottom: 10px;
+            left: 10px;
+            h4 {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .blog-buy {
+    &__content {
+      &--row {
+        .item {
+          height: auto;
+
+          .icon-buy {
+            top: 10px;
+            left: 10px;
+            font-size: 10px;
+            padding: 10px 5px;
+          }
+          .item-text {
+            bottom: 10px;
+            left: 10px;
+            h4 {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Ipad dọc(768 x 1024)*/
+
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+}
+
+//code//
+// .blog-buy {
+//   &__title {
+//     h3 {
+//     }
+//     p {
+//     }
+//   }
+//   &__content {
+//     &--row {
+//       .item {
+//         &:not(:first-child) {
+//         }
+//         .icon-buy {
+//           span {
+//             i {
+//             }
+//           }
+//         }
+//         .item-text {
+//           h4 {
+//           }
+//           span {
+//             i {
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   &__view-more {
+//     a {
+//     }
+//   }
+// }
