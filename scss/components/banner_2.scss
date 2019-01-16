@@ -48,13 +48,13 @@
  @media only screen and (min-width: 320px) and(max-width: 375px) {
    .banner-2 {
      &__content {
-       width: 90%;
+       width: 100%;
 
        &--title {
-         font-size: 20px;
+         h1{font-size: 17px;}
 
          p {
-           font-size: 18px;
+           font-size: 13px;
          }
        }
      }

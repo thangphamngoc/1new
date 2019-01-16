@@ -75,9 +75,10 @@
      top: -5000px;
      z-index: 99;
    }
-   .sidebar-wrapper-mb {
-     bottom: 0;
+   .sidebar-wrapper-mb
+    {
      display: block;
+     bottom: 0;
      overflow: auto;
      position: fixed;
      right: 0;
@@ -204,7 +205,7 @@
         }
       }
         &--account {
-          display: none;
+          margin-top: 0px;
         }
         &--icon {
           display: block;
