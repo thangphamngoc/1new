@@ -4,8 +4,7 @@
   width: 1070px;
 }
 .content-hot {
-  margin-top: 140px;
-  margin-bottom: 100px;
+  margin: 140px 0px 100px 0;
   &__title {
     text-align: center;
     margin-bottom: 70px;
@@ -36,7 +35,7 @@
         .avatar {
           img {
             width: 100%;
-            height: 100%;
+            height: auto;
           }
         }
         .icon-number {
@@ -94,10 +93,12 @@
 
 //reponsive //
 @media only screen and (min-width: 320px) and(max-width: 375px) {
+ 
+  .container {
+    max-width: 90%;
+  }
   .content-hot {
-    margin-bottom: 120px;
-    margin-top: 75px;
-
+    margin: 75px 0 120px 0;
     &__title {
       h3 {
         font-size: 15px;
@@ -121,6 +122,10 @@
             margin: 0 auto;
             height: 100%;
             width: 100%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
           .icon-number {
             left: 10px;
@@ -133,21 +138,35 @@
               font-size: 20px;
             }
           }
+          &.item-x2 {
+            width: 100%;
+            margin-bottom: 25px;
+            display: block;
+          }
         }
-        .item-x2 {
-          width: 100%;
-          margin-bottom: 25px;
-          display: block;
-        }
+        //  .item-x2 {
+        //    width: 100%;
+        //    margin-bottom: 25px;
+        //    display: block;
+        //  }
+      }
+    }
+    &__view-more {
+      text-align: center;
+      a {
+        @include mixin-view;
+        padding: 15px 15px;
       }
     }
   }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
   .content-hot {
-    margin-bottom: 120px;
-    margin-top: 75px;
+    margin-bottom: 75px 0 120px 0;
 
     &__title {
       h3 {
@@ -199,84 +218,90 @@
       }
     }
   }
+}
 
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .content-hot {
-      margin-bottom: 120px;
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+  }
+  .content-hot {
+    margin-bottom: 120px;
 
-      &__title {
-        h3 {
-          font-size: 20px;
-        }
-        p {
-          font-size: 9px;
-        }
+    &__title {
+      h3 {
+        font-size: 20px;
       }
-      &__content {
-        &--row {
+      p {
+        font-size: 9px;
+      }
+    }
+    &__content {
+      &--row {
+        display: block;
+        .item-x2 {
+          width: 100%;
+          margin-bottom: 25px;
           display: block;
-          display: block;
+          .icon-number {
+            left: 25px;
+          }
+          .item-text {
+            left: 25px;
+            bottom: 15px;
+          }
+        }
+        .item:not(:first-child) {
+          margin: 0 0 25px 0;
+        }
+        .item {
+          margin-bottom: 25px;
+          display: flex;
+          width: 100%;
+          height: auto;
 
-          .item {
-            margin-bottom: 25px;
-            display: flex;
+          .avatar {
             width: 100%;
-            height: auto;
-
-            &:not(:first-child) {
-              margin: 0px;
-              margin-bottom: 25px;
-            }
-            .avatar {
+            height: 265px;
+            img {
               width: 100%;
-              height: 265px img {
-
-              }
+              height: 100%;
             }
-            .icon-number {
+          }
+          .icon-number {
+            left: 20px;
+            .item-text {
               left: 20px;
-              .item-text {
-                left: 20px;
-                bottom: 15px;
+              bottom: 15px;
 
-                h4 {
-                  font-size: 20px;
-                }
-              }
-            }
-            .item-x2 {
-              width: 100%;
-              margin-bottom: 25px;
-              display: block;
-              .icon-number {
-                left: 25px;
-              }
-              .item-text {
-                left: 25px;
+              h4 {
+                font-size: 20px;
               }
             }
           }
         }
       }
     }
+  }
+}
 
-    /*Ipad dọc(768 x 1024)*/
+//     /*Ipad dọc(768 x 1024)*/
 
-    @media only screen and (min-width: 768px) and (max-width: 1250px) {
-      .content-hot {
-        &__content {
-          &--row {
-            .item {
-              height: auto;
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+  .container {
+    max-width: 90%;
+  }
+  .content-hot {
+    &__content {
+      .item-x2 {
+        width: 69.9%;
+      }
+      &--row {
+        .item {
+          height: auto;
 
-              .item-text {
-                h4 {
-                  font-size: 20px;
-                }
-              }
-            }
-            .item-x2 {
-              width: 69.9%;
+          .item-text {
+            h4 {
+              font-size: 20px;
             }
           }
         }

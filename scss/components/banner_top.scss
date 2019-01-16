@@ -45,7 +45,7 @@
           text-indent: 20px;
           width: 100%;
         }
-        &::placeholder {
+        input::placeholder {
           color: #dedede;
           text-transform: uppercase;
         }
@@ -93,195 +93,193 @@
   }
 }
 
-@media only screen and (min-width: 320px) and(max-width: 375px) {
-  .banner-top {
-    height: 390px;
+ @media only screen and (min-width: 320px) and (max-width: 375px) {
+   .banner-top {
+     height: 390px;
 
-    &__search {
-      width: 90%;
-      top: 55.1%;
+     &__search {
+       width: 90%;
+       top: 55.1%;
 
-      &--title {
-        margin-bottom: 25px;
+       &--title {
+         margin-bottom: 25px;
 
-        h2 {
-          font-size: 20px;
-        }
-        p {
-          font-size: 12px;
-        }
-      }
-      &--form {
-        width: 80%;
+         h2 {
+           font-size: 20px;
+         }
+         p {
+           font-size: 12px;
+         }
+       }
+       &--form {
+         width: 80%;
 
-        .form-group {
-          input {
-            text-indent: 4px;
-            font-size: 12px;
-            padding: 10px 20px;
-          }
-          &::placeholder {
-            color: #dedede;
-            text-transform: uppercase;
-          }
-          button {
-            padding: 0px;
-            width: 115px;
-            font-size: 10px;
-          }
-        }
-      }
-    }
-    &__statistic {
-      max-width: 80%;
-      margin-bottom: -65px;
-      padding: 10px;
-      .item {
-        h3 {
-          font-size: 15px;
-          margin: 5px 10px;
-        }
-        p {
-          margin-bottom: 5px;
-          font-size: 12px;
-          margin-top: 0px;
-          font-size: 12px;
-        }
-      }
-    }
-  }
-}
+         .form-group {
+           input {
+             text-indent: 4px;
+             font-size: 12px;
+             padding: 10px 20px;
+           }
+           &::placeholder {
+             color: #dedede;
+             text-transform: uppercase;
+           }
+           button {
+             padding: 0px;
+             width: 115px;
+             font-size: 10px;
+           }
+         }
+       }
+     }
+     &__statistic {
+       max-width: 80%;
+       margin-bottom: -65px;
+       padding: 10px;
+       .item {
+         h3 {
+           font-size: 15px;
+           margin: 5px 10px;
+         }
+         p {
+           margin: 0 0 0 5px;
+           font-size: 12px;
+         }
+       }
+     }
+   }
+ }
 
-@media only screen and (min-width: 375px) and (max-width: 480px) {
-  .banner-top {
-    height: 390px;
+ @media only screen and (min-width: 375px) and (max-width: 480px) {
+   .banner-top {
+     height: 390px;
 
-    &__search {
-      width: 90%;
-      top: 55.1%;
+     &__search {
+       width: 90%;
+       top: 55.1%;
 
-      &--title {
-        margin-bottom: 25px;
+       &--title {
+         margin-bottom: 25px;
 
-        h2 {
-          font-size: 20px;
-        }
-        p {
-          font-size: 12px;
-        }
-      }
-      &--form {
-        width: 80%;
+         h2 {
+           font-size: 20px;
+         }
+         p {
+           font-size: 12px;
+         }
+       }
+       &--form {
+         width: 80%;
 
-        .form-group {
-          input {
-            text-indent: 4px;
-            font-size: 12px;
-            padding: 10px 20px;
-          }
-          &::placeholder {
-            color: #dedede;
-            text-transform: uppercase;
-          }
-          button {
-            padding: 0px;
-            width: 115px;
-            font-size: 10px;
-          }
-        }
-      }
-    }
-    &__statistic {
-      max-width: 80%;
-      margin-bottom: -80px;
-      padding: 15px;
-      .item {
-        h3 {
-          font-size: 15px;
-          margin: 5px 10px;
-        }
-        p {
-          margin-bottom: 5px;
-          font-size: 12px;
-          margin-top: 0px;
-          font-size: 12px;
-        }
-      }
-    }
-  }
-}
+         .form-group {
+           input {
+             text-indent: 4px;
+             font-size: 12px;
+             padding: 10px 20px;
+           }
+           &::placeholder {
+             color: #dedede;
+             text-transform: uppercase;
+           }
+           button {
+             padding: 0px;
+             width: 115px;
+             font-size: 10px;
+           }
+         }
+       }
+     }
+     &__statistic {
+       max-width: 80%;
+       margin-bottom: -80px;
+       padding: 15px;
+       .item {
+         h3 {
+           font-size: 15px;
+           margin: 5px 10px;
+         }
+         p {
+           margin-bottom: 5px;
+           font-size: 12px;
+           margin-top: 0px;
+           font-size: 12px;
+         }
+       }
+     }
+   }
+ }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .banner-top {
-    height: 550px;
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+   .banner-top {
+     height: 550px;
 
-    &__search {
-      width: 90%;
+     &__search {
+       width: 90%;
 
-      &--title {
-        margin-bottom: 25px;
+       &--title {
+         margin-bottom: 25px;
 
-        h2 {
-          font-size: 30px;
-        }
-        p {
-          font-size: 15px;
-        }
-      }
-      &--form {
-        width: 55%;
+         h2 {
+           font-size: 30px;
+         }
+         p {
+           font-size: 15px;
+         }
+       }
+       &--form {
+         width: 55%;
 
-        .form-group {
-          input {
-            text-indent: 4px;
-            font-size: 12px;
-          }
-          &::placeholder {
-            color: #dedede;
-            text-transform: uppercase;
-          }
-          button {
-            padding: 0px;
-            font-size: 9px;
-          }
-        }
-      }
-    }
-    &__statistic {
-      max-width: 90%;
-      .item {
-        h3 {
-          font-size: 20px;
-        }
-        p {
-          margin-top: 0px;
-        }
-      }
-    }
-  }
-}
+         .form-group {
+           input {
+             text-indent: 4px;
+             font-size: 12px;
+           }
+           &::placeholder {
+             color: #dedede;
+             text-transform: uppercase;
+           }
+           button {
+             padding: 0px;
+             font-size: 9px;
+           }
+         }
+       }
+     }
+     &__statistic {
+       max-width: 90%;
+       .item {
+         h3 {
+           font-size: 20px;
+         }
+         p {
+           margin-top: 0;
+         }
+       }
+     }
+   }
+ }
 
-/*Ipad dọc(768 x 1024)*/
+// /*Ipad dọc(768 x 1024)*/
 
-@media only screen and (min-width: 768px) and (max-width: 1250px) {
-  .banner-top {
-    &__search {
-      width: 90%;
+ @media only screen and (min-width: 768px) and (max-width: 1250px) {
+   .banner-top {
+     &__search {
+       width: 90%;
 
-      &--title {
-        h2 {
-          font-size: 35px;
-        }
-        p {
-          font-size: 15px;
-        }
-      }
-      &--form {
-        width: 65%;
-      }
-    }
-    &__statistic {
-      max-width: 90%;
-    }
-  }
-}
+       &--title {
+         h2 {
+           font-size: 35px;
+         }
+         p {
+           font-size: 15px;
+         }
+       }
+       &--form {
+         width: 65%;
+       }
+     }
+     &__statistic {
+       max-width: 90%;
+     }
+   }
+ }

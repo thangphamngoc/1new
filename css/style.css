@@ -421,8 +421,6 @@
         text-transform: uppercase;
         font-weight: 400;
     }
-    .footer .item .content {
-    }
     .footer .item .content .form .form-group {
         display: flex;
     }

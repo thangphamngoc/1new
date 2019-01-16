@@ -40,6 +40,15 @@
           padding: 10px 20px;
         }
         .item-text {
+          position: absolute;
+          bottom: 25px;
+          left: 25px;
+          color: #fff;
+          h4 {
+            font-size: 25px;
+            margin: 10px 0;
+            font-weight: normal;
+          }
           span {
             margin-right: 5px;
             i {
@@ -60,8 +69,51 @@
 
 //reponsive //
 
-@media only screen and (min-width: 320px) and(max-width: 375px) {
+ @media only screen and (min-width: 320px) and(max-width: 375px) {
+   .blog-buy {
+     &__content {
+       &--row {
+         display: block;
+         margin-bottom: 0;
+         .item {
+           height: auto;
+           width: 100%;
+           margin-bottom: 15px;
+           margin-left: 0 !important;
+           .avatar{ 
+             img {
+            width: 100%;
+            height: auto;
+        }
+      }
+           .icon-buy {
+             top: 10px;
+             left: 10px;
+             font-size: 10px;
+             padding: 10px 5px;
+           }
+           .item-text {
+             bottom: 10px;
+             left: 10px;
+             h4 {
+               font-size: 15px;
+             }
+           }
+         }
+       }
+     }
+     &__view-more {
+       a {
+         padding: 15px 30px;
+       }
+     }
+   }
+  }
+ 
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
   .blog-buy {
+
     &__content {
       &--row {
         display: block;
@@ -71,44 +123,12 @@
           width: 100%;
           margin-bottom: 15px;
           margin-left: 0 !important;
-
-          .icon-buy {
-            top: 10px;
-            left: 10px;
-            font-size: 10px;
-            padding: 10px 5px;
-          }
-          .item-text {
-            bottom: 10px;
-            left: 10px;
-            h4 {
-              font-size: 15px;
+          .avatar {
+            img {
+              width: 100%;
+              height: auto;
             }
           }
-        }
-      }
-    }
-    &__view-more {
-      a {
-        padding: 15px 30px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 375px) and (max-width: 480px) {
-  .blog-buy {
-    display: block;
-    margin-bottom: 0;
-
-    &__content {
-      &--row {
-        .item {
-          height: auto;
-          width: 100%;
-          margin-bottom: 15px;
-          margin-left: 0 !important;
-
           .icon-buy {
             top: 10px;
             left: 10px;
@@ -134,7 +154,11 @@
       &--row {
         .item {
           height: auto;
-
+          .avatar {
+            img {
+              width: 100%;
+            }
+          }
           .icon-buy {
             top: 10px;
             left: 10px;
@@ -154,11 +178,23 @@
   }
 }
 
-/*Ipad dọc(768 x 1024)*/
+// /*Ipad dọc(768 x 1024)*/
 
 @media only screen and (min-width: 768px) and (max-width: 1250px) {
+  .blog-buy {
+    &__content {
+      &--row {
+        .item {
+          .item-text {
+            h4 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-
 //code//
 // .blog-buy {
 //   &__title {
